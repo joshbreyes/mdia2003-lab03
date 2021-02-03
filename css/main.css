@@ -96,16 +96,104 @@ h1 {
    LAYOUT
    ========================================================================== */
 
-   .heading {
-     text-align: center;
-   }
+div,
+section,
+footer,
+header {
+  border: 1px solid #ccc;
+}   
 
+.column {
+  background-color: tan;
+  margin: 1rem;
+}
+
+.heading {
+  text-align: center;
+}
+
+
+
+/*Small only*/
+
+@media screen and (max-width: 39.9375em) {}
+
+
+/*Medium and up*/
+
+@media screen and (min-width: 40em) {
+  .row {
+    display: grid;
+    width: 85vw;
+    max-width: 70rem;
+    margin: 0 auto;
+  }
+
+  .medium-col-2 {
+    grid-template-columns: 1fr 1fr ;
+  }
+  .medium-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .medium-col-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .medium-col-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .full-span {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+}
+
+
+/*Medium only*/
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+
+}
+    
+
+/*Large and up*/
+
+@media screen and (min-width: 64em) {
+  .large-col-2 {
+    grid-template-columns: 1fr 1fr ;
+  }
+  .large-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .large-col-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .large-col-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .large-col-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+
+/*Large only*/
+
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
 
 
 /* ==========================================================================
    THEME
    ========================================================================== */
    
+.footer-page {
+  background-color: #222;
+}
+
+.page-slider {
+  background-color: lightgray;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
