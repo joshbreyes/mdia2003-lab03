@@ -18,6 +18,8 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">"
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -30,10 +32,22 @@
   <script src="js/main.js"></script>
 
   <header class="page-header>">
-    <div class="row"></div>
+    <div class="row m-1-2">
+      <nav class="mobile-nav m-hide l-hide">mobile menu</nav>
+      <div class="column">
+        <img class="logo" src="/placeholder.svg">
+      </div>
+      <nav class="column main-nav">
+        <a href="#" class="main-nav-item active">home</a>
+        <a href="#" class="main-nav-item">pages</a>
+        <a href="#" class="main-nav-item">blog</a>
+        <a href="#" class="main-nav-item">portfolio</a>
+        <a href="#" class="main-nav-item">contact</a>
+      </nav>
+    </div>
   </header>
 
-  <div class="page-slider">
+  <div class="page-slider s-hide">
     <div class="row">
       <div class="column">
          <img src="placeholder.svg" alt="slider placeholder"> <!-- add placeholder image -->
@@ -50,21 +64,26 @@
   </div>
 
 <section class="about">
-  <div class="row large-col-4">
+  <div class="row memium-col-2 large-col-4">
     <div class="column full-span">
       <h2 class="heading">Things That We Do</h2>
+      <p class="tagline">tagline for h2 heading</p>
     </div>
     <div class="column">
       <h3 class="heading">Web Solutions</h3>
+      <p class="tagline">tagline for h2 heading</p>
     </div>
     <div class="column">
       <h3 class="heading">Photography</h3>
+      <p class="tagline">tagline for h2 heading</p>
     </div>
     <div class="column">
       <h3 class="heading">Web Development</h3>
+      <p class="tagline">tagline for h2 heading</p>
     </div>
     <div class="column">
       <h3 class="heading">Web Design</h3>
+      <p class="tagline">tagline for h2 heading</p>
     </div>
   </div>
 </section>
@@ -73,8 +92,9 @@
   <div class="row medium-col-2 large-col-3">
     <div class="column full-span">
       <h2 class="heading">What's Up Lately?</h2>
+      <p class="tagline">tagline for h2 heading</p>
     </div>
-    <div class="column">
+    <div class="column main-project">
       <figure class="project">
         <img src="placeholder.svg"> <!-- remember to download placeholder images and place here -->
        <figcaption class="project-caption">
@@ -105,6 +125,7 @@
   <div class="row medium-col-2 large-col-3">
     <div class="column full-span">
       <h2 class="heading">Our latest projects</h2>
+      <p class="tagline">tagline for h2 heading</p>
     </div>
     <div class="column">
       <figure class="project">
@@ -162,6 +183,7 @@
     <div class="column"></div>
     <div class="column full-span">
       <h2 class="heading">Thingsofabove</h2>
+      <p class="tagline">tagline for h2 heading</p>
     </div>
     <div class="column">
       <p>GUI element here</p>
@@ -190,21 +212,55 @@
 </div>
 
 <footer class="footer-page">
-  <div class="row medium-col-2 large-col-4">
+  <div class="row medium-col-2 large-col-4 row-no-margin">
     <div class="column footer-page-intro full-span">
-      <h3 class="heading">Pewee Herman intro</h3>
+      <h3 class="heading inverted">Pewee Herman intro</h3>
+      <p class="inverted">Peweeeeeeeeeeeeeeeeeeeeeee Hermaaaaaaaaaannnnnnnnnnnn</p>
     </div>
     <div class="column">
-      <h4>About Us</h4>
+      <h4 class="inverted">About Us</h4>
+      <p class="inverted">
+        akkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+        akjjjjjjjjjjjjjjjjjjjjdwwwwwwwwwwwwwwwww
+      </p>
     </div>
-    <div class="column">
-      <h4>Flickr Photos</h4>
+    <div class="column flickr s-hide">
+      <h4 class="inverted">Flickr Photos</h4>
+      <div class="sub-grid m-col-3">
+        <div class="column">
+            <img src="img/placeholder.svg" alt="placeholder">
+        </div>
+        <div class="column">
+            <img src="/placeholder.svg" alt="placeholder">
+        </div>
+        <div class="column">
+            <img src="/placeholder.svg" alt="placeholder">
+        </div>
+        <div class="column">
+            <img src="/placeholder.svg" alt="placeholder">
+        </div>
+        <div class="column">
+            <img src="/placeholder.svg" alt="placeholder">
+        </div>
+        <div class="column">
+            <img src="/placeholder.svg" alt="placeholder">
+        </div>
+      </div>
     </div>
-    <div class="column">
-      <h4>Recent Tweets</h4>
     </div>
-    <div class="column">
-      <h4>Newsletter</h4>
+    <div class="column soc-msgs">
+      <h4 class="inverted">Recent Tweets</h4>
+      <ul class="twts">
+        <li class="twts-item inverted">
+          <span class="twts-item-tag">
+            <a href="#">minions</a> - aaaaaaaaa dddddddddddddd      kkkkkkkkkkkkkkkkk
+          </span>
+        </li>
+      </ul>
+    </div>
+    <div class="column newsletter s-hide">
+      <h4 class inverted>Newsletter</h4>
+      <p class="inverted">dddddddd ffffffffffffffff ggggggggggggggg aaaaaaaaaa ddddd</p>
     </div>
   </div>
 </footer>
